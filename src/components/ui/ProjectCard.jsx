@@ -21,7 +21,7 @@ const ProjectCard = ({ project }) => {
 
         {image && (
           <img
-            src={image}
+            src={`${import.meta.env.BASE_URL}${image}`}
             alt={title}
             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
           />
